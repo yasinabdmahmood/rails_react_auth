@@ -45,6 +45,9 @@ gem "bootsnap", require: false
 #Authentication gem
 gem 'devise'
 
+gem 'rack-cors', :require => 'rack/cors'
+
+
 
 # Use Sass to process CSS__
 # gem "sassc-rails"
