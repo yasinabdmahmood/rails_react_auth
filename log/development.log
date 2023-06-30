@@ -1,0 +1,632 @@
+Started GET "/" for ::1 at 2023-05-29 09:07:44 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/railties-7.0.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/railties-7.0.5/lib/rails/templates/rails/welcome/index.html.erb (Duration: 12.7ms | Allocations: 682)
+Completed 200 OK in 182ms (Views: 49.7ms | ActiveRecord: 0.0ms | Allocations: 7757)
+
+
+  [1m[35m (3.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateUsers (20230530161058)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime(6), "remember_created_at" datetime(6), "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230530161058"]]
+  [1m[36mTRANSACTION (3.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.9ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-05-30 16:12:08.830055"], ["updated_at", "2023-05-30 16:12:08.830055"]]
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2023-05-30 19:13:38 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/railties-7.0.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/railties-7.0.5/lib/rails/templates/rails/welcome/index.html.erb (Duration: 6.8ms | Allocations: 552)
+Completed 200 OK in 101ms (Views: 22.5ms | ActiveRecord: 0.0ms | Allocations: 6058)
+
+
+Started GET "/" for ::1 at 2023-05-30 19:23:38 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/railties-7.0.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/railties-7.0.5/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.0ms | Allocations: 299)
+Completed 200 OK in 6ms (Views: 3.0ms | Allocations: 1083)
+
+
+Started GET "/main.14e4ca0053e55bbaeae3.hot-update.json" for ::1 at 2023-05-30 20:42:46 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/main.14e4ca0053e55bbaeae3.hot-update.json"):
+  
+Started GET "/" for ::1 at 2023-05-30 20:42:47 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/railties-7.0.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/railties-7.0.5/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.1ms | Allocations: 305)
+Completed 200 OK in 26ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 2569)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 20:49:41 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+Completed 401 Unauthorized in 9ms (Allocations: 660)
+
+
+Started GET "/" for ::1 at 2023-05-30 20:50:04 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/railties-7.0.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/railties-7.0.5/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.7ms | Allocations: 295)
+Completed 200 OK in 13ms (Views: 6.1ms | Allocations: 1058)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 20:50:08 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+Completed 401 Unauthorized in 6ms (Allocations: 256)
+
+
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "abd181103@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["email", "abd181103@gmail.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["created_at", "2023-05-30 17:52:18.532758"], ["updated_at", "2023-05-30 17:52:18.532758"]]
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started POST "/users/sign_in" for ::1 at 2023-05-30 20:52:47 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+Completed 401 Unauthorized in 5ms (Allocations: 212)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 20:52:49 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+Completed 401 Unauthorized in 5ms (Allocations: 211)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 20:53:30 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+Completed 401 Unauthorized in 30ms (ActiveRecord: 0.0ms | Allocations: 1908)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 20:55:59 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+Completed 401 Unauthorized in 33ms (ActiveRecord: 0.0ms | Allocations: 1908)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 20:57:59 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+Completed 401 Unauthorized in 62ms (ActiveRecord: 0.0ms | Allocations: 1907)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 20:59:09 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+Completed 401 Unauthorized in 34ms (ActiveRecord: 0.0ms | Allocations: 1908)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 21:14:23 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+Completed 401 Unauthorized in 33ms (ActiveRecord: 0.0ms | Allocations: 1908)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 21:18:40 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+Completed 401 Unauthorized in 32ms (ActiveRecord: 0.0ms | Allocations: 1908)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2023-05-30 21:19:25 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://127.0.0.1:3000)
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms | Allocations: 266)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2023-05-30 21:19:26 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://127.0.0.1:3000)
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms | Allocations: 213)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2023-05-30 21:20:01 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://127.0.0.1:3000)
+Completed 401 Unauthorized in 5ms (Allocations: 462)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2023-05-30 21:21:07 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://127.0.0.1:3000)
+Completed 401 Unauthorized in 34ms (ActiveRecord: 0.0ms | Allocations: 1907)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2023-05-30 21:21:14 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://127.0.0.1:3000)
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.0ms | Allocations: 266)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2023-05-30 21:25:59 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://127.0.0.1:3000)
+Completed 401 Unauthorized in 37ms (ActiveRecord: 0.0ms | Allocations: 1907)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2023-05-30 21:29:33 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://127.0.0.1:3000)
+Completed 401 Unauthorized in 6ms (ActiveRecord: 0.0ms | Allocations: 266)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2023-05-30 21:29:35 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://127.0.0.1:3000)
+Completed 401 Unauthorized in 6ms (ActiveRecord: 0.0ms | Allocations: 213)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2023-05-30 21:30:28 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://127.0.0.1:3000)
+Completed 401 Unauthorized in 33ms (ActiveRecord: 0.0ms | Allocations: 1907)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2023-05-30 21:31:30 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://127.0.0.1:3000)
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.0ms | Allocations: 266)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2023-05-30 21:31:32 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://127.0.0.1:3000)
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.0ms | Allocations: 213)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2023-05-30 21:32:16 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://127.0.0.1:3000)
+Completed 401 Unauthorized in 33ms (ActiveRecord: 0.0ms | Allocations: 1908)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 21:41:12 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+Completed 401 Unauthorized in 22ms (ActiveRecord: 0.0ms | Allocations: 1907)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 21:41:15 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+Completed 401 Unauthorized in 9ms (ActiveRecord: 0.0ms | Allocations: 266)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 21:41:16 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.0ms | Allocations: 213)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 21:45:07 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+Completed 401 Unauthorized in 30ms (ActiveRecord: 0.0ms | Allocations: 1908)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 21:45:16 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+Completed 401 Unauthorized in 6ms (ActiveRecord: 0.0ms | Allocations: 266)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 21:45:18 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+Completed 401 Unauthorized in 6ms (ActiveRecord: 0.0ms | Allocations: 213)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 21:45:25 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.0ms | Allocations: 213)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 21:45:26 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.0ms | Allocations: 213)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 21:45:27 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+Completed 401 Unauthorized in 6ms (ActiveRecord: 0.0ms | Allocations: 212)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 21:45:28 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.0ms | Allocations: 212)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 21:46:43 +0300
+Started POST "/users/sign_in" for ::1 at 2023-05-30 21:46:43 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/users/sign_in" for ::1 at 2023-05-30 21:46:44 +0300
+Started POST "/users/sign_in" for ::1 at 2023-05-30 21:46:44 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+Completed 401 Unauthorized in 34ms (ActiveRecord: 0.0ms | Allocations: 2225)
+
+
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+Completed 401 Unauthorized in 37ms (ActiveRecord: 0.0ms | Allocations: 2810)
+
+
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+Completed 401 Unauthorized in 39ms (ActiveRecord: 0.0ms | Allocations: 3000)
+
+
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+Completed 401 Unauthorized in 40ms (ActiveRecord: 0.0ms | Allocations: 3194)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 21:46:46 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.0ms | Allocations: 266)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 21:47:11 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms | Allocations: 212)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 21:47:16 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.0ms | Allocations: 212)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 21:47:17 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.0ms | Allocations: 212)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 21:47:18 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.0ms | Allocations: 212)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 21:47:19 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.0ms | Allocations: 212)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 21:47:19 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.0ms | Allocations: 212)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 21:47:20 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.0ms | Allocations: 212)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 21:47:41 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 212)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 22:24:19 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+Completed 401 Unauthorized in 5ms (Allocations: 211)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 22:24:20 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+Completed 401 Unauthorized in 2ms (Allocations: 211)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 22:34:59 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+Completed 401 Unauthorized in 16ms (ActiveRecord: 0.0ms | Allocations: 1908)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 22:38:39 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+Completed 401 Unauthorized in 27ms (ActiveRecord: 0.0ms | Allocations: 1907)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 22:40:58 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+Completed 401 Unauthorized in 14ms (ActiveRecord: 0.0ms | Allocations: 1908)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 22:44:56 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.0ms | Allocations: 266)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 22:44:59 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.0ms | Allocations: 213)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 23:00:09 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+Completed 401 Unauthorized in 3ms (Allocations: 212)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 23:01:16 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+Completed 401 Unauthorized in 16ms (ActiveRecord: 0.0ms | Allocations: 1908)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 23:09:00 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+Completed 401 Unauthorized in 5ms (Allocations: 264)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 23:14:12 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+Completed 401 Unauthorized in 6ms (Allocations: 212)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 23:14:14 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+Completed 401 Unauthorized in 5ms (Allocations: 212)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 23:14:20 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+Completed 401 Unauthorized in 4ms (Allocations: 212)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 23:15:25 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+Completed 401 Unauthorized in 29ms (ActiveRecord: 0.0ms | Allocations: 1908)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 23:19:30 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "abd181103@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+Redirected to http://localhost:3000/
+Completed 303 See Other in 706ms (ActiveRecord: 1.2ms | Allocations: 23529)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 23:19:52 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "abd181103@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+Redirected to http://localhost:3000/
+Completed 303 See Other in 504ms (ActiveRecord: 0.3ms | Allocations: 1960)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 23:24:00 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "abd181103@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+Redirected to http://localhost:3000/
+Completed 303 See Other in 519ms (ActiveRecord: 0.3ms | Allocations: 1729)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 23:24:04 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "abd181103@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+Redirected to http://localhost:3000/
+Completed 303 See Other in 516ms (ActiveRecord: 0.4ms | Allocations: 1728)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 23:24:08 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "abd181103@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+Redirected to http://localhost:3000/
+Completed 303 See Other in 532ms (ActiveRecord: 0.3ms | Allocations: 1716)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 23:24:11 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "abd181103@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+Redirected to http://localhost:3000/
+Completed 303 See Other in 538ms (ActiveRecord: 0.3ms | Allocations: 1716)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 23:24:12 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "abd181103@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+Redirected to http://localhost:3000/
+Completed 303 See Other in 526ms (ActiveRecord: 0.3ms | Allocations: 1711)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 23:24:14 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "abd181103@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+Redirected to http://localhost:3000/
+Completed 303 See Other in 542ms (ActiveRecord: 0.2ms | Allocations: 1710)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 23:24:16 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "abd181103@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+Redirected to http://localhost:3000/
+Completed 303 See Other in 526ms (ActiveRecord: 0.3ms | Allocations: 1711)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 23:24:21 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "abd181103@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+Redirected to http://localhost:3000/
+Completed 303 See Other in 521ms (ActiveRecord: 0.3ms | Allocations: 1713)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 23:24:23 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "abd181103@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+Redirected to http://localhost:3000/
+Completed 303 See Other in 505ms (ActiveRecord: 0.3ms | Allocations: 1713)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 23:24:25 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "abd181103@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+Redirected to http://localhost:3000/
+Completed 303 See Other in 534ms (ActiveRecord: 0.4ms | Allocations: 1716)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 23:24:27 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "abd181103@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+Redirected to http://localhost:3000/
+Completed 303 See Other in 523ms (ActiveRecord: 0.3ms | Allocations: 1713)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-05-30 23:24:29 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"user"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"abd181103@gmail.com", "password"=>"[FILTERED]"}}}
+HTTP Origin header (http://localhost:3001) didn't match request.base_url (http://localhost:3000)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "abd181103@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:5:in `create'
+Redirected to http://localhost:3000/
+Completed 303 See Other in 522ms (ActiveRecord: 0.3ms | Allocations: 1713)
+
+
